@@ -3,15 +3,22 @@ import numpy as np
 import glob
 import random
 from windowcapture import WindowCapture
-from PIL import ImageGrab
 
 # Load Yolo
-net = cv2.dnn.readNet("yolov3_custom_1000.weights", "yolov3_custom.cfg")
+net = cv2.dnn.readNet("yolov3_custom_last.weights", "yolov3_custom.cfg")
+#Uncomment if want to use GPU
+#net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
+#net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
+
 # Name custom object
 classes = ["sign_green", "sign_red", "sign_yellow"]
 
 # Images path
-capturePath = WindowCapture("Nova guia - Brave")
+capturePath = WindowCapture("Grand Theft Auto V")
+
+# while True:
+#     capturePath.get_screenshot()
+#     print(capturePath.w, capturePath.h)
 
 layer_names = net.getLayerNames()
 print(layer_names)
