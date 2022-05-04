@@ -2,15 +2,14 @@ from detection import Detector
 import os
 
 def main():
-    videoPath = "D:/Videos/unknown/interview.mp4" #colocar
+    videoPath = "C:/Users/deivi/Desktop/teste.png" #colocar
 
-    configPath = os.path.join("model_data", "ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt")
-    modelPath = os.path.join("model_data", "frozen_inference_graph.pb")
-    classesPath = os.path.join("model_data", "coco.names")
+    configPath = os.path.join("model_data", "yolov3_testing.cfg")
+    modelPath = os.path.join("model_data", "signs_training_last.weights")
+    classesPath = os.path.join("model_data", "nomes.names")
 
     base = Detector(videoPath, configPath, modelPath, classesPath)
     base.onCapture()
-
 
 if __name__ == '__main__':
     main()

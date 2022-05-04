@@ -1,0 +1,9 @@
+.DS_Store
+build/*
+gitlab_kanban_report/TOKEN
+gitlab_kanban_report/rsa_id*
+gitlab_kanban_report/__pycache__/
+gitlab_kanban_report/*.swp
+model_data/frozen_inference_
+yolov3_custom_1000.weights
+signs_training_last.weights

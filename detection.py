@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 import time
-
+from windowcapture import WindowCapture
 np.random.seed(20)
 class Detector:
     def __init__(self, videoPath, configPath, modelPath, classesPath):
@@ -21,20 +21,25 @@ class Detector:
     def classRead(self):
         with open(self.classesPath, 'r') as f:
             self.classesList = f.read().splitlines()
-        self.classesList.insert(0, '__Background__')
+        #self.classesList.insert(0, '__Background__')
         self.colorList = np.random.uniform(low=0,  high=255, size=(len(self.classesList), 3))
         print(self.classesList)
 
     def onCapture(self):
-        cap = cv.VideoCapture(self.videoPath)
 
-        if(cap.isOpened() == False):
-            print("Error")
-            return
-        (success, image) = cap.read()
+        #cap = cv.VideoCapture(self.videoPath)
+
+        
+        cap = WindowCapture("NFS Underground 2")
+
+
+
+        
 
         startTime = 0
-        while success:
+        while True:
+
+            image = cap.get_screenshot()
             currentTime = time.time()
 
             fps = 1/(currentTime - startTime)
@@ -69,5 +74,4 @@ class Detector:
             if key == ord("q"):
                 break
             
-            (success, image) = cap.read()
         cv.destroyAllWindows()
