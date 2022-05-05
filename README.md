@@ -3,7 +3,7 @@
 📜 Object detection in real time using YOLO with OpenCV. Darknet to train an IA and use their weights to detect traffic lights with screenshots from GTAV. The main target is prove that using a game like GTA V, we can detect a object from the real world. The benefit is that we can train an IA from our desktop computer, to detect objects that is so difficult to take screenshot or photos to do the training of classes (in our case sign_red, sign_green and sign_yellow).
 
 
-## 🛠 Instalação
+## 🛠 Installing
 
 install all the dependencies, in terminal (make sure that you are in repository path):
 
