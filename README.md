@@ -14,7 +14,7 @@ Now you need a .weights trained, if dont have it and want to detect traffic ligh
 
 ## 📈 Exemplo de uso
 
-### Here you can see we taking screeshots to training our classes
+### Here you can see we taking screeshots to train our classes
 ![screenshot](https://github.com/deivid-a1/TEES-Object-detection-YOLO/blob/main/imgEx/ex1.png)
 ![classes_identify](https://github.com/deivid-a1/TEES-Object-detection-YOLO/blob/main/imgEx/ex12.PNG)
 
