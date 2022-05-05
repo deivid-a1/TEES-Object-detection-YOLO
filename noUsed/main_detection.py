@@ -1,4 +1,4 @@
-from detection import Detector
+from noUsed.detection import Detector
 import os
 
 def main():
