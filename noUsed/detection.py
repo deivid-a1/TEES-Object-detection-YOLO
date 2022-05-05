@@ -30,7 +30,9 @@ class Detector:
         #cap = cv.VideoCapture(self.videoPath)
 
         
-        cap = WindowCapture("NFS Underground 2")
+        #cap = WindowCapture("Grand Theft Auto V")
+        cap = WindowCapture("Nova guia - Brave")
+        #cap = WindowCapture("Grand Theft Auto V")
 
 
 

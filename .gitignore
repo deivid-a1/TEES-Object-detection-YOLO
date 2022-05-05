@@ -6,3 +6,4 @@ gitlab_kanban_report/__pycache__/
 gitlab_kanban_report/*.swp
 model_data/frozen_inference_
 *.weights
+noUsed/amdPart/*.h5

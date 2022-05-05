@@ -29,8 +29,10 @@ class WindowCapture:
         #print(window_rect)
         self.w = 1920
         self.h = 1080
+        #if problems with findWindow, comment next 2 lines;
         self.w = window_rect[2] - window_rect[0]
         self.h = window_rect[3] - window_rect[1]
+        print(window_rect)
         
 
         # account for the window border and titlebar and cut them off
